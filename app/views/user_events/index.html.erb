@@ -1,0 +1,4 @@
+<% @user_events.each do |user_event| %>
+  <%= link_to user_event.title, user_event%>
+  <p> from: <%= user_event.location %> </p>
+<% end %>

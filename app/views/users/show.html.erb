@@ -1,0 +1,7 @@
+<%= @user.user_name %>
+<%= @user.first_name %>
+<%= @user.last_name %>
+<%= @user.from %>
+<%= @user.description %>
+<%= button_to "Delete", @user, method: :delete %>
+<%= button_to "Edit", "/users/#{@user.id}/edit", method: :get %>

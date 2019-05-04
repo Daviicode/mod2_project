@@ -1,0 +1,5 @@
+<%= @user_event.title %>
+<%= @user_event.location %>
+<%= @user_event.description %>
+<%= button_to "Delete", @user_event, method: :delete %>
+<%= button_to "Edit", "/user_events/#{@user_event.id}/edit", method: :get %>

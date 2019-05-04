@@ -1,0 +1,22 @@
+<%= form_for @user do |f| %>
+
+<br>
+<p>Username:<%= f.text_field :user_name  %>
+
+ Password:<%= f.text_field :user_password %></p></br>
+
+<p>First Name:<%= f.text_field :first_name %>
+
+Last Name:<%= f.text_field :last_name %></p>
+
+<br>
+<p>City of Origin: <%= f.text_field :from %></p></br>
+
+
+<%= f.label :description %>
+<%= f.text_field :description %>
+
+<br></br>
+
+<br><%= f.submit %></br>
+<% end %>
